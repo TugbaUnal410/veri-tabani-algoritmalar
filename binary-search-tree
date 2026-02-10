@@ -1,0 +1,21 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+1.Aşama: Rooat olarak 3 aldım.
+2.Aşama: Dizinin başından teker teker elemanlara bakıyorum küçükse sayının sol kısmına büyükse sayının sağ 
+kısmına dal oluşturarak yazıyorum.
+7 rootun sağında bulunur
+5 rootun sağındadır ancak yediden dal çıkarttığımda sol kısmındadır
+1 rootun solunda bulunur
+8 rootun sağındadır ancak 7 den büyük olduğundan 7 nin sağ dal kısmında bulunur 
+6 rootun sağ kısmındadır ancak 5 ten dal çıkartığımda 5 ten büyük olduğundan sağ kısmındaki daldadır
+0 rootun solu kısmındadır ve 1 den de küçük olduğundan 1 in sol dalına yazılır
+9 rootun sağ kısmındadır ve 8 den de büyük olduğundan 8 in sağ dalına yazılır
+4 rootun sağındadır ve 5 ten küçük olduğu için 5 in sol dal kısmına yazılır
+2 rootunun solundadır ve 1 den büyük olduğundan 1 in sağ dalındadır
+                     
+                                            3
+                                         /     \
+                                         1     7
+                                      /  \     /  \
+                                    0    2     5   8
+                                            /  \   / \
+                                            4   6    9
